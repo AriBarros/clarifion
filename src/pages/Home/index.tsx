@@ -1,11 +1,14 @@
 import {
   ContentArea,
+  ContentText,
   ContentWrapper,
   Footer,
   Header,
   HomeContainer,
   IconArea,
   LogoArea,
+  ProductDescription,
+  ProductText,
   Step,
   StepsContainer,
   Subtitle,
@@ -22,8 +25,10 @@ import GreenCheckIcon from "../../assets/greencheck.svg";
 import ClarifonLogo from "../../assets/logo.svg";
 import NortonLogo from "../../assets/norton.svg";
 import McAfeeLogo from "../../assets/mcafee.svg";
+import Stars from "../../assets/stars.svg";
 
 import Clarifon from "../../assets/images/clarifon.svg";
+import Product from "../../assets/images/product.svg";
 
 export default function Home() {
   const icons = [
@@ -79,12 +84,31 @@ export default function Home() {
       <ContentArea>
         <ContentWrapper>
           <img src={`${Clarifon}`} alt="Clarifon image" />
-          <text>
-            <span className="highlight">ONE TIME ONLY</span> Special Price For 6
-            Extra Clarifion For Only{" "}
-            <span className="highlight">$14 Each </span>
-            ($84.00 total!)
-          </text>
+          <ContentText>
+            <text>
+              <span className="highlight">ONE TIME ONLY</span> Special Price For
+              6 Extra Clarifion For Only{" "}
+              <span className="highlight">$14 Each </span>
+              ($84.00 total!)
+            </text>
+
+            <ProductDescription>
+              <img src={`${Product}`} alt="Product image" />
+              <div
+                style={{
+                  display: "flex",
+                  gap: 10,
+                }}
+              >
+                <ProductText>
+                  <span>Clarifion Air Ionizer</span>
+                </ProductText>
+                <text>$180</text>
+                <span>$84</span>
+              </div>
+              <img src={`${Stars}`} alt="Stars image" />
+            </ProductDescription>
+          </ContentText>
         </ContentWrapper>
       </ContentArea>
 

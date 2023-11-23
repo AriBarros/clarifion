@@ -131,6 +131,55 @@ export const ContentWrapper = styled.div`
   }
 `;
 
+export const ContentText = styled.div`
+  display: flex;
+  gap: 20px;
+  box-sizing: border-box;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 100%;
+  width: 100%;
+  align-items: flex-start;
+  flex-direction: column;
+`;
+
+export const ProductText = styled.div`
+  display: flex;
+  gap: 20px;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  align-items: flex-start;
+  flex-direction: row;
+
+  span {
+    font-family: ${Theme.fonts.primary};
+    font-size: 14px;
+    font-weight: 400;
+  }
+`;
+export const ProductDescription = styled.div`
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  text {
+    text-decoration: line-through;
+    color: ${Theme.colors.grey};
+    font-size: 20px;
+  }
+  span {
+    font-family: ${Theme.fonts.primary};
+    color: ${Theme.colors.lightBlue};
+    font-size: 22px;
+    font-weight: 400;
+  }
+`;
+
 export const Footer = styled.div`
   width: 100%;
   display: flex;
