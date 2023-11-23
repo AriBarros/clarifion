@@ -28,7 +28,7 @@ export const IconArea = styled.div`
   gap: 10px;
 
   h2 {
-    font-style: ${Theme.fonts.primary};
+    font-family: ${Theme.fonts.primary};
     font-size: 14px;
     font-weight: 400;
     color: ${Theme.colors.white};
@@ -45,16 +45,103 @@ export const LogoArea = styled.div`
   flex-direction: row;
 `;
 
+export const Title = styled.text`
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  flex-direction: row;
+  font-family: ${Theme.fonts.primary};
+  font-size: 48px;
+  font-weight: 400;
+`;
+
+export const Subtitle = styled.text`
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  flex-direction: row;
+  color: ${Theme.colors.lightGrey};
+  font-family: ${Theme.fonts.primary};
+  font-size: 24px;
+  font-weight: 400;
+`;
+
+export const StepsContainer = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  gap: 25px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+
+  h2 {
+    font-family: ${Theme.fonts.primary};
+    font-size: 20px;
+    font-weight: 400;
+  }
+`;
+
+export const Step = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+
+  h1 {
+    font-family: ${Theme.fonts.primary};
+    font-size: 20px;
+    font-weight: 600;
+  }
+`;
+
+export const ContentArea = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 50px 300px 50px 300px;
+  padding: 30px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  height: 100%;
+  background-color: ${Theme.colors.darkerWhite};
+`;
+
+export const ContentWrapper = styled.div`
+  display: flex;
+  gap: 20px;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  align-items: flex-start;
+
+  text {
+    font-family: ${Theme.fonts.primary};
+    font-size: 32px;
+    font-weight: 500;
+    text-align: justify;
+
+    span.highlight {
+      color: ${Theme.colors.lightBlue};
+    }
+  }
+`;
+
 export const Footer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
+  box-sizing: border-box;
   align-items: center;
   justify-content: space-between;
   background-color: ${Theme.colors.grey};
   padding: 20px;
-  h2 {
-    font-style: ${Theme.fonts.primary};
+  span {
+    font-family: ${Theme.fonts.primary};
     font-size: 14px;
     font-weight: 400;
     color: ${Theme.colors.white};
