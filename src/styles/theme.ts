@@ -1,13 +1,18 @@
-export const Theme = {
+import { extendTheme } from "@chakra-ui/react";
+
+export const Theme = extendTheme({
   colors: {
     white: "#FFFF",
+    black: "#000000",
     darkerWhite: "#FAFAFA",
     grey: "#252F3D",
     lightGrey: "#4D5254",
+    lighterBlue: "#EDF3FD",
     lightBlue: "#2C7EF8",
     lightGreen: "#59AE43",
   },
   fonts: {
-    primary: "'Manrope', sans-serif",
+    heading: `'Manrope', sans-serif`,
+    body: `'Manrope', sans-serif`,
   },
-};
+});

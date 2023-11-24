@@ -28,7 +28,6 @@ export const IconArea = styled.div`
   gap: 10px;
 
   h2 {
-    font-family: ${Theme.fonts.primary};
     font-size: 14px;
     font-weight: 400;
     color: ${Theme.colors.white};
@@ -51,7 +50,7 @@ export const Title = styled.text`
   box-sizing: border-box;
   width: 100%;
   flex-direction: row;
-  font-family: ${Theme.fonts.primary};
+
   font-size: 48px;
   font-weight: 400;
 `;
@@ -63,7 +62,7 @@ export const Subtitle = styled.text`
   width: 100%;
   flex-direction: row;
   color: ${Theme.colors.lightGrey};
-  font-family: ${Theme.fonts.primary};
+
   font-size: 24px;
   font-weight: 400;
 `;
@@ -79,7 +78,6 @@ export const StepsContainer = styled.div`
   flex-direction: row;
 
   h2 {
-    font-family: ${Theme.fonts.primary};
     font-size: 20px;
     font-weight: 400;
   }
@@ -94,7 +92,6 @@ export const Step = styled.div`
   flex-direction: row;
 
   h1 {
-    font-family: ${Theme.fonts.primary};
     font-size: 20px;
     font-weight: 600;
   }
@@ -120,7 +117,6 @@ export const ContentWrapper = styled.div`
   align-items: flex-start;
 
   text {
-    font-family: ${Theme.fonts.primary};
     font-size: 32px;
     font-weight: 500;
     text-align: justify;
@@ -148,24 +144,42 @@ export const ProductText = styled.div`
   display: flex;
   gap: 20px;
   box-sizing: border-box;
+  align-items: center;
   height: 100%;
   width: 100%;
   align-items: flex-start;
   flex-direction: row;
 
   span {
-    font-family: ${Theme.fonts.primary};
     font-size: 14px;
     font-weight: 400;
   }
+  h3 {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+  }
 `;
+export const ProductStock = styled.div`
+  display: flex;
+  gap: 10px;
+
+  span {
+    color: ${Theme.colors.black} !important;
+    font-size: 20px !important;
+    font-weight: 400;
+  }
+`;
+
 export const ProductDescription = styled.div`
   display: flex;
+  flex-basis: auto;
   width: 100%;
-  flex-direction: column;
-  gap: 20px;
+  flex-direction: row;
+  gap: 30px;
   justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 30px;
 
   text {
     text-decoration: line-through;
@@ -173,10 +187,65 @@ export const ProductDescription = styled.div`
     font-size: 20px;
   }
   span {
-    font-family: ${Theme.fonts.primary};
     color: ${Theme.colors.lightBlue};
     font-size: 22px;
     font-weight: 400;
+  }
+`;
+
+export const CheckArea = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+
+  span {
+    font-size: 18px !important;
+  }
+`;
+
+export const InfoArea = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: ${Theme.colors.lighterBlue};
+  width: 100%;
+  span {
+    font-size: 20px !important;
+  }
+  b {
+    color: ${Theme.colors.lightBlue};
+    font-weight: 400;
+  }
+`;
+
+export const ButtonArea = styled.div`
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 20px;
+  border-radius: 50px;
+  padding: 15px;
+  background-color: ${Theme.colors.lightGreen};
+  width: 100%;
+
+  Button {
+    font-size: 24px !important;
+    color: ${Theme.colors.white};
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: "none";
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+  }
+  span {
+    font-size: 24px !important;
+    color: ${Theme.colors.white};
   }
 `;
 
@@ -190,7 +259,6 @@ export const Footer = styled.div`
   background-color: ${Theme.colors.grey};
   padding: 20px;
   span {
-    font-family: ${Theme.fonts.primary};
     font-size: 14px;
     font-weight: 400;
     color: ${Theme.colors.white};

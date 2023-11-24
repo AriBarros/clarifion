@@ -1,4 +1,6 @@
 import {
+  ButtonArea,
+  CheckArea,
   ContentArea,
   ContentText,
   ContentWrapper,
@@ -6,8 +8,10 @@ import {
   Header,
   HomeContainer,
   IconArea,
+  InfoArea,
   LogoArea,
   ProductDescription,
+  ProductStock,
   ProductText,
   Step,
   StepsContainer,
@@ -26,9 +30,16 @@ import ClarifonLogo from "../../assets/logo.svg";
 import NortonLogo from "../../assets/norton.svg";
 import McAfeeLogo from "../../assets/mcafee.svg";
 import Stars from "../../assets/stars.svg";
+import Stock from "../../assets/stock.svg";
+import Percentage from "../../assets/percentage.svg";
 
 import Clarifon from "../../assets/images/clarifon.svg";
 import Product from "../../assets/images/product.svg";
+import Cards from "../../assets/images/cards.svg";
+
+import { ArrowForwardIcon, CheckIcon } from "@chakra-ui/icons";
+import { Theme } from "../../styles/theme";
+import { Button } from "@chakra-ui/react";
 
 export default function Home() {
   const icons = [
@@ -83,7 +94,7 @@ export default function Home() {
 
       <ContentArea>
         <ContentWrapper>
-          <img src={`${Clarifon}`} alt="Clarifon image" />
+          <img src={`${Clarifon}`} alt="Clarifon" />
           <ContentText>
             <text>
               <span className="highlight">ONE TIME ONLY</span> Special Price For
@@ -93,21 +104,87 @@ export default function Home() {
             </text>
 
             <ProductDescription>
-              <img src={`${Product}`} alt="Product image" />
-              <div
-                style={{
-                  display: "flex",
-                  gap: 10,
-                }}
-              >
-                <ProductText>
+              <img src={`${Product}`} alt="Product" />
+              <ProductText>
+                <div
+                  style={{
+                    display: "flex",
+                    gap: 5,
+                    flexDirection: "column",
+                  }}
+                >
                   <span>Clarifion Air Ionizer</span>
-                </ProductText>
-                <text>$180</text>
-                <span>$84</span>
-              </div>
-              <img src={`${Stars}`} alt="Stars image" />
+                  <img src={`${Stars}`} alt="Stars" />
+                  <ProductStock>
+                    <img src={`${Stock}`} alt="Stock" />
+                    <span>12 left in Stock</span>
+                  </ProductStock>
+                  <h3>
+                    Simply plug a Clarifion into any standard outlet and replace
+                    bulky, expensive air purifiers with a simple.
+                  </h3>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    gap: 10,
+                    alignItems: "center",
+                    marginLeft: "auto",
+                  }}
+                >
+                  <text>$180</text>
+                  <span>$84</span>
+                </div>
+              </ProductText>
             </ProductDescription>
+            <CheckArea>
+              <CheckIcon boxSize={6} color={Theme.colors.lightBlue} />
+              <span>
+                Negative Ion Technology may <b>help with allergens</b>
+              </span>
+            </CheckArea>
+            <CheckArea>
+              <CheckIcon boxSize={6} color={Theme.colors.lightBlue} />
+              <span>
+                Designed for <b>air rejuvenation</b>
+              </span>
+            </CheckArea>
+            <CheckArea>
+              <CheckIcon boxSize={6} color={Theme.colors.lightBlue} />
+              <span>
+                <b>Perfect for every room</b> in all types of places.
+              </span>
+            </CheckArea>
+            <InfoArea>
+              <img src={`${Percentage}`} alt="Percentage icon" />
+              <span>
+                Save <b>53%</b> and get <b>6 extra Clarifision</b> for only{" "}
+                <b>$14 Each</b>.
+              </span>
+            </InfoArea>
+            <ButtonArea>
+              <Button
+                __css={{
+                  bacgroundColor: "none",
+                  width: "100%",
+                  height: "100%",
+                }}
+                placeholder="oi"
+              >
+                YES - CLAIM MY DISCOUNT
+                <ArrowForwardIcon boxSize={8} color={Theme} />
+              </Button>
+            </ButtonArea>
+            <div
+              style={{
+                margin: "0 auto",
+                width: "100%",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <img src={`${Cards}`} alt="Cards" />
+            </div>
           </ContentText>
         </ContentWrapper>
       </ContentArea>
