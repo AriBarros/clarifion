@@ -2,6 +2,7 @@ import { ArrowForwardIcon, CheckIcon } from "@chakra-ui/icons";
 import {
   BadgeArea,
   BadgeContent,
+  Button,
   ButtonArea,
   CheckArea,
   CommentSection,
@@ -16,7 +17,6 @@ import {
 } from "./styles";
 
 import { Theme } from "../../styles/theme";
-import { Button } from "@chakra-ui/react";
 
 import Stars from "../../assets/stars.svg";
 import Stock from "../../assets/stock.svg";
@@ -128,11 +128,7 @@ const Table = () => {
             </span>
           </InfoArea>
           <ButtonArea>
-            <Button
-              __css={{
-                backgroundColor: "none",
-              }}
-            >
+            <Button>
               YES - CLAIM MY DISCOUNT
               <ArrowForwardIcon boxSize={8} color={Theme} />
             </Button>

@@ -3,27 +3,17 @@ import { Theme } from "../../styles/theme";
 
 export const HomeContainer = styled.div`
   display: flex;
-  width: 100%;
   height: 100%;
   flex-direction: column;
-`;
-
-export const Header = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 30px;
-  margin-bottom: 24px;
-  padding: 15px;
-  background-color: ${Theme.colors.grey};
+  margin: 20px;
+  box-sizing: border-box;
 `;
 
 export const LogoArea = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 20px 100px 30px 80px;
+  padding: 40px 100px 40px 100px;
   box-sizing: border-box;
-  width: 100%;
   height: 100%;
   flex-direction: row;
 `;
@@ -34,7 +24,6 @@ export const Title = styled.text`
   box-sizing: border-box;
   width: 100%;
   flex-direction: row;
-
   font-size: 48px;
   font-weight: 400;
 `;
@@ -53,13 +42,10 @@ export const Subtitle = styled.text`
 
 export const StepsContainer = styled.div`
   display: flex;
-  justify-content: space-evenly;
-  padding: 20px;
-  gap: 25px;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
   flex-direction: row;
+  gap: 10px;
+  box-sizing: border-box;
+  margin-top: 10px;
 
   h2 {
     font-size: 20px;
@@ -69,14 +55,19 @@ export const StepsContainer = styled.div`
 
 export const Step = styled.div`
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 40px 100px 40px 100px;
   gap: 10px;
   width: 100%;
   height: 100%;
-  flex-direction: row;
 
   h1 {
     font-size: 20px;
     font-weight: 600;
+  }
+  h2 {
+    font-size: 20px;
   }
 `;

@@ -4,7 +4,7 @@ import { Theme } from "../../styles/theme";
 export const ContentArea = styled.div`
   display: flex;
   justify-content: center;
-  margin: 50px 300px 50px 300px;
+  margin: 50px 100px 50px 100px;
   padding: 30px;
   border-radius: 10px;
   box-sizing: border-box;
@@ -27,6 +27,7 @@ export const CommentSection = styled.div`
   padding: 20px;
   flex-direction: column;
   align-content: flex-start;
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
   background-color: ${Theme.colors.white};
@@ -93,6 +94,7 @@ export const ProductText = styled.div`
 `;
 export const ProductStock = styled.div`
   display: flex;
+  box-sizing: border-box;
   gap: 10px;
 
   span {
@@ -109,6 +111,7 @@ export const ProductDescription = styled.div`
   flex-direction: row;
   gap: 30px;
   justify-content: space-between;
+  box-sizing: border-box;
   align-items: flex-start;
   margin-bottom: 30px;
 
@@ -126,6 +129,7 @@ export const ProductDescription = styled.div`
 
 export const CheckArea = styled.div`
   display: flex;
+  box-sizing: border-box;
   flex-direction: row;
   align-items: center;
   gap: 10px;
@@ -139,6 +143,7 @@ export const InfoArea = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  box-sizing: border-box;
   gap: 20px;
   border-radius: 10px;
   padding: 15px;
@@ -153,27 +158,28 @@ export const InfoArea = styled.div`
   }
 `;
 
+export const Button = styled.button`
+  font-size: 24px !important;
+  color: ${Theme.colors.white};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+`;
+
 export const ButtonArea = styled.div`
   display: flex;
   justify-content: center !important;
   align-items: center !important;
+  box-sizing: border-box;
   gap: 20px;
   border-radius: 50px;
   padding: 15px;
   background-color: ${Theme.colors.lightGreen};
   width: 100%;
-  cursor: pointer;
 
-  Button {
-    font-size: 24px !important;
-    color: ${Theme.colors.white};
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    gap: 20px;
-  }
   span {
     font-size: 24px !important;
     color: ${Theme.colors.white};
@@ -183,6 +189,7 @@ export const ButtonArea = styled.div`
 export const BadgeArea = styled.div`
   display: flex;
   justify-content: center;
+  box-sizing: border-box;
   flex-direction: column;
   align-items: center;
   gap: 20px;
@@ -210,15 +217,16 @@ export const BadgeArea = styled.div`
 
 export const BadgeContent = styled.div`
   display: flex;
+  box-sizing: border-box;
   justify-content: center;
   flex-direction: flex;
   align-items: center;
   gap: 20px;
-  padding: 15px;
+  padding: 100px 15px 15px 15px;
   width: 100%;
 
   span {
-    font-size: 16px;
+    font-size: 20px;
     color: ${Theme.colors.black};
   }
 `;
