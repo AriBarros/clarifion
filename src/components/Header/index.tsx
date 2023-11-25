@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
-import CheckmarkIcon from "../../assets/checkmark.svg";
-import TruckIcon from "../../assets/truck.svg";
-import HeartIcon from "../../assets/heart.svg";
-import ArrowSyncIcon from "../../assets/arrowsync.svg";
+import CheckmarkIcon from "../../assets/icons/checkmark.svg";
+import TruckIcon from "../../assets/icons/truck.svg";
+import HeartIcon from "../../assets/icons/heart.svg";
+import ArrowSyncIcon from "../../assets/icons/arrowsync.svg";
 import { Container, IconArea, SliderArrow, SliderWrapper } from "./styles";
 
 const Header = () => {

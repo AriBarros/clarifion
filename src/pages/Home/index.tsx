@@ -8,12 +8,12 @@ import {
   Subtitle,
   Title,
 } from "./styles";
-import BlueCircleIcon from "../../assets/blueCircle.svg";
-import BlueWitheCircleIcon from "../../assets/bluewhiteCircle.svg";
-import GreenCheckIcon from "../../assets/greencheck.svg";
-import ClarifonLogo from "../../assets/logo.svg";
-import NortonLogo from "../../assets/norton.svg";
-import McAfeeLogo from "../../assets/mcafee.svg";
+import BlueCircleIcon from "../../assets/icons/blueCircle.svg";
+import BlueWitheCircleIcon from "../../assets/icons/bluewhiteCircle.svg";
+import GreenCheckIcon from "../../assets/icons/greencheck.svg";
+import ClarifonLogo from "../../assets/images/logo.svg";
+import NortonLogo from "../../assets/images/norton.svg";
+import McAfeeLogo from "../../assets/images/mcafee.svg";
 import Table from "../../components/Table";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";

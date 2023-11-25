@@ -20,9 +20,9 @@ import {
 
 import { Theme } from "../../styles/theme";
 
-import Stars from "../../assets/stars.svg";
-import Stock from "../../assets/stock.svg";
-import Percentage from "../../assets/percentage.svg";
+import Stars from "../../assets/icons/stars.svg";
+import Stock from "../../assets/icons/stock.svg";
+import Percentage from "../../assets/icons/percentage.svg";
 
 import Clarifon from "../../assets/images/clarifon.svg";
 import Product from "../../assets/images/product.svg";

@@ -94,11 +94,11 @@ export const Step = styled.div`
   height: 100%;
 
   h1 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
   }
   h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   @media (max-width: 600px) {

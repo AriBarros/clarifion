@@ -1,5 +1,5 @@
 import { Container } from "./styles";
-import LockIcon from "../../assets/lock.svg";
+import LockIcon from "../../assets/icons/lock.svg";
 
 const Footer = () => {
   return (
