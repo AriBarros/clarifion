@@ -1,6 +1,6 @@
 # Clarifion project
 
-This project used React, Typescript, styled-components, Chakra UI (most icons) and HTML/CSS properties. Available for computer and mobile devices.
+This project used React, Typescript, styled-components, Chakra UI (most icons) and HTML/CSS properties. Available for computer and mobile devices. Deployed on Vercel
 
 # Link to public URL
 
