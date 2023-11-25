@@ -4,6 +4,8 @@ This project used React, Typescript, styled-components, Chakra UI (most icons) a
 
 # Link to public URL
 
+https://clarifion-delta.vercel.app/
+
 # Images and GIF
 
 # Getting Started with Create React App
