@@ -86,7 +86,7 @@ const Home = () => {
             : steps.map(({ icon, text }, index) => (
                 <Step key={index}>
                   <img src={icon} alt={`${text} icon`} />
-                  {index == 2 ? <h1>{text}</h1> : <h2>{text}</h2>}
+                  {index === 2 ? <h1>{text}</h1> : <h2>{text}</h2>}
                 </Step>
               ))}
         </StepsContainer>

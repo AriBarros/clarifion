@@ -10,6 +10,11 @@ export const Container = styled.div`
   margin-bottom: 24px;
   padding: 30px;
   background-color: ${Theme.colors.grey};
+
+  @media (max-width: 600px) {
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 export const IconArea = styled.div`
@@ -26,5 +31,28 @@ export const IconArea = styled.div`
     font-size: 14px;
     font-weight: 400;
     color: ${Theme.colors.white};
+  }
+`;
+
+export const SliderWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 50px;
+`;
+
+export const SliderArrow = styled.div`
+  font-size: 26px;
+  cursor: pointer;
+  background-color: ${Theme.colors.primary};
+  color: ${Theme.colors.white};
+  padding: 8px;
+  border-radius: 50%;
+  margin: 0 10px;
+  user-select: none;
+
+  &:hover {
+    background-color: ${Theme.colors.primaryDark};
   }
 `;
