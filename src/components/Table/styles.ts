@@ -19,7 +19,7 @@ export const ImageArea = styled.div`
   width: 100%;
   height: 100%;
 
-  @media (max-width: 600px) {
+  @media (max-width: 480px) {
     text {
       font-size: 26px !important;
       text-align: center !important;
@@ -65,7 +65,7 @@ export const ContentWrapper = styled.div`
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 480px) {
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -84,7 +84,7 @@ export const ContentText = styled.div`
   align-items: flex-start;
   flex-direction: column;
 
-  @media (max-width: 600px) {
+  @media (max-width: 480px) {
     font-size: 14px;
     padding-left: 0px;
     padding-right: 0px;
@@ -112,12 +112,24 @@ export const ProductText = styled.div`
     font-size: 14px;
     font-weight: 400;
   }
-  h3 {
+  text {
     font-size: 18px;
     font-weight: 400;
     text-align: justify;
   }
+
+  @media (max-width: 480px) {
+    span {
+      font-size: 3.9vw !important;
+    }
+  }
+  @media (max-width: 420px) {
+    span {
+      font-size: 3.7vw !important;
+    }
+  }
 `;
+
 export const ProductStock = styled.div`
   display: flex;
   box-sizing: border-box;
@@ -129,7 +141,7 @@ export const ProductStock = styled.div`
     font-weight: 400;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 480px) {
     span {
       font-size: 16px !important;
     }
@@ -158,7 +170,7 @@ export const ProductDescription = styled.div`
     font-weight: 400;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 480px) {
     font-size: 14px;
     margin-bottom: 0px;
 
@@ -182,7 +194,7 @@ export const CheckArea = styled.div`
     font-size: 18px !important;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 480px) {
     gap: 20px;
     span {
       font-size: 14px !important;
@@ -208,7 +220,7 @@ export const InfoArea = styled.div`
     font-weight: 400;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 480px) {
     span {
       font-size: 18px !important;
     }
@@ -225,7 +237,7 @@ export const Button = styled.button`
   height: 100%;
   gap: 20px;
 
-  @media (max-width: 600px) {
+  @media (max-width: 480px) {
     font-size: 20px !important;
   }
 `;
@@ -255,6 +267,7 @@ export const BadgeArea = styled.div`
 
   span {
     font-size: 24px;
+    font-weight: 600;
     color: ${Theme.colors.red};
     cursor: pointer;
     position: relative;
@@ -271,10 +284,10 @@ export const BadgeArea = styled.div`
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 480px) {
     padding: 5px;
     span {
-      font-size: 20px;
+      font-size: 3.8vw;
     }
   }
 `;
@@ -294,10 +307,10 @@ export const BadgeContent = styled.div`
     color: ${Theme.colors.black};
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 480px) {
     padding: 0px;
     span {
-      font-size: 16px;
+      font-size: 3vw;
     }
   }
 `;

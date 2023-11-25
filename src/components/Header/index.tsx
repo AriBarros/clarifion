@@ -12,7 +12,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setShowSlider(window.innerWidth <= 600);
+      setShowSlider(window.innerWidth <= 480);
     };
 
     handleResize();

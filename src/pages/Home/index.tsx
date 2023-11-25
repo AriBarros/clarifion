@@ -52,7 +52,7 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    setShowSlider(windowWidth <= 600);
+    setShowSlider(windowWidth <= 480);
   }, [windowWidth]);
 
   return (
@@ -60,15 +60,45 @@ const Home = () => {
       <Header />
       <HomeContainer>
         <LogoArea>
-          <img src={ClarifonLogo} alt="Clarifon logo" />
-          <div style={{ gap: 20, display: "flex" }}>
-            {logos.map((logo, index) => (
-              <img key={index} src={logo} alt={`Logo ${index}`} />
-            ))}
-          </div>
+          {showSlider ? (
+            <div
+              style={{
+                gap: "25vw",
+                display: "flex",
+                justifyContent: "space-between",
+              }}
+            >
+              <div style={{ gap: "2vw", display: "flex", marginLeft: "auto" }}>
+                <img
+                  src={ClarifonLogo}
+                  alt="Clarifon logo"
+                  style={{ maxWidth: "100%", height: "auto", width: "30vw" }}
+                />
+              </div>
+              <div style={{ gap: "2vw", display: "flex", marginRight: "auto" }}>
+                {logos.map((logo, index) => (
+                  <img
+                    key={index}
+                    src={logo}
+                    alt={`Logo ${index}`}
+                    style={{ maxWidth: "100%", height: "auto", width: "15vw" }}
+                  />
+                ))}
+              </div>
+            </div>
+          ) : (
+            <>
+              <img src={ClarifonLogo} alt="Clarifon logo" />
+              <div style={{ gap: 20, display: "flex" }}>
+                {logos.map((logo, index) => (
+                  <img key={index} src={logo} alt={`Logo ${index}`} />
+                ))}
+              </div>
+            </>
+          )}
         </LogoArea>
 
-        <div style={{ margin: "20px" }}>
+        <div style={{ margin: showSlider ? "10px" : "20px" }}>
           <Title>Wait! Your Order In Progress.</Title>
           <Subtitle>
             Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing

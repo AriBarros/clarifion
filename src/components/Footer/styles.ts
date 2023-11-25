@@ -23,9 +23,9 @@ export const Container = styled.div`
     align-items: center;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 480px) {
     span {
-      font-size: 16px;
+      font-size: 3vw;
     }
     div {
       padding: 20px;

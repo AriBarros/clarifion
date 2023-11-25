@@ -37,7 +37,7 @@ const Table = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setShowSlider(window.innerWidth <= 600);
+      setShowSlider(window.innerWidth <= 480);
     };
 
     handleResize();
@@ -73,7 +73,7 @@ const Table = () => {
                 }}
               >
                 <span>Clarifion Air Ionizer</span>
-                <img src={`${Stars}`} alt="Stars" style={{ width: 300 }} />
+                <img src={`${Stars}`} alt="Stars" />
                 <ProductStock>
                   <img src={`${Stock}`} alt="Stock" />
                   <span>12 left in Stock</span>
