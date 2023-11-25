@@ -22,4 +22,17 @@ export const Container = styled.div`
     gap: 20px;
     align-items: center;
   }
+
+  @media (max-width: 600px) {
+    span {
+      font-size: 16px;
+    }
+    div {
+      padding: 20px;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 `;

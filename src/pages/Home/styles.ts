@@ -7,6 +7,10 @@ export const HomeContainer = styled.div`
   flex-direction: column;
   margin: 20px;
   box-sizing: border-box;
+
+  @media (max-width: 600px) {
+    margin: 10px;
+  }
 `;
 
 export const LogoArea = styled.div`
@@ -16,6 +20,12 @@ export const LogoArea = styled.div`
   box-sizing: border-box;
   height: 100%;
   flex-direction: row;
+
+  @media (max-width: 600px) {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+  }
 `;
 
 export const Title = styled.text`
@@ -26,6 +36,12 @@ export const Title = styled.text`
   flex-direction: row;
   font-size: 48px;
   font-weight: 400;
+
+  @media (max-width: 600px) {
+    display: flex;
+    font-size: 36px;
+    text-align: center;
+  }
 `;
 
 export const Subtitle = styled.text`
@@ -38,6 +54,12 @@ export const Subtitle = styled.text`
 
   font-size: 24px;
   font-weight: 400;
+
+  @media (max-width: 600px) {
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+  }
 `;
 
 export const StepsContainer = styled.div`
@@ -46,10 +68,18 @@ export const StepsContainer = styled.div`
   gap: 10px;
   box-sizing: border-box;
   margin-top: 10px;
+  width: 100%;
 
   h2 {
     font-size: 20px;
     font-weight: 400;
+  }
+
+  @media (max-width: 600px) {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
   }
 `;
 
@@ -69,5 +99,27 @@ export const Step = styled.div`
   }
   h2 {
     font-size: 20px;
+  }
+
+  @media (max-width: 600px) {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    width: 100%;
+
+    img {
+      width: 30%;
+    }
+
+    h1 {
+      font-size: 10px;
+      font-weight: 600;
+    }
+    h2 {
+      font-size: 10px;
+      font-weight: 400;
+    }
   }
 `;

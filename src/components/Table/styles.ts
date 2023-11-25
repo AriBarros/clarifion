@@ -18,6 +18,13 @@ export const ImageArea = styled.div`
   gap: 40px;
   width: 100%;
   height: 100%;
+
+  @media (max-width: 600px) {
+    text {
+      font-size: 26px !important;
+      text-align: center !important;
+    }
+  }
 `;
 
 export const CommentSection = styled.div`
@@ -57,6 +64,12 @@ export const ContentWrapper = styled.div`
       color: ${Theme.colors.lightBlue};
     }
   }
+
+  @media (max-width: 600px) {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const ContentText = styled.div`
@@ -70,6 +83,19 @@ export const ContentText = styled.div`
   width: 100%;
   align-items: flex-start;
   flex-direction: column;
+
+  @media (max-width: 600px) {
+    font-size: 14px;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    text {
+      font-size: 20px;
+    }
+    h3 {
+      text-align: center;
+    }
+  }
 `;
 
 export const ProductText = styled.div`
@@ -102,6 +128,12 @@ export const ProductStock = styled.div`
     font-size: 20px !important;
     font-weight: 400;
   }
+
+  @media (max-width: 600px) {
+    span {
+      font-size: 16px !important;
+    }
+  }
 `;
 
 export const ProductDescription = styled.div`
@@ -125,6 +157,18 @@ export const ProductDescription = styled.div`
     font-size: 22px;
     font-weight: 400;
   }
+
+  @media (max-width: 600px) {
+    font-size: 14px;
+    margin-bottom: 0px;
+
+    text {
+      font-size: 16px;
+    }
+    span {
+      font-size: 18px;
+    }
+  }
 `;
 
 export const CheckArea = styled.div`
@@ -136,6 +180,13 @@ export const CheckArea = styled.div`
 
   span {
     font-size: 18px !important;
+  }
+
+  @media (max-width: 600px) {
+    gap: 20px;
+    span {
+      font-size: 14px !important;
+    }
   }
 `;
 
@@ -156,6 +207,12 @@ export const InfoArea = styled.div`
     color: ${Theme.colors.lightBlue};
     font-weight: 400;
   }
+
+  @media (max-width: 600px) {
+    span {
+      font-size: 18px !important;
+    }
+  }
 `;
 
 export const Button = styled.button`
@@ -167,6 +224,10 @@ export const Button = styled.button`
   width: 100%;
   height: 100%;
   gap: 20px;
+
+  @media (max-width: 600px) {
+    font-size: 20px !important;
+  }
 `;
 
 export const ButtonArea = styled.div`
@@ -179,11 +240,6 @@ export const ButtonArea = styled.div`
   padding: 15px;
   background-color: ${Theme.colors.lightGreen};
   width: 100%;
-
-  span {
-    font-size: 24px !important;
-    color: ${Theme.colors.white};
-  }
 `;
 
 export const BadgeArea = styled.div`
@@ -195,6 +251,7 @@ export const BadgeArea = styled.div`
   gap: 20px;
   padding: 15px;
   width: 100%;
+  text-transform: uppercase;
 
   span {
     font-size: 24px;
@@ -213,6 +270,13 @@ export const BadgeArea = styled.div`
       background-color: ${Theme.colors.red};
     }
   }
+
+  @media (max-width: 600px) {
+    padding: 5px;
+    span {
+      font-size: 20px;
+    }
+  }
 `;
 
 export const BadgeContent = styled.div`
@@ -222,11 +286,18 @@ export const BadgeContent = styled.div`
   flex-direction: flex;
   align-items: center;
   gap: 20px;
-  padding: 100px 15px 15px 15px;
+  padding: 50px 15px 15px 15px;
   width: 100%;
 
   span {
-    font-size: 20px;
+    font-size: 22px;
     color: ${Theme.colors.black};
+  }
+
+  @media (max-width: 600px) {
+    padding: 0px;
+    span {
+      font-size: 16px;
+    }
   }
 `;
