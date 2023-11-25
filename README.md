@@ -6,7 +6,13 @@ This project used React, Typescript, styled-components, Chakra UI (most icons) a
 
 https://clarifion-delta.vercel.app/
 
-# Images and GIF
+# GIFs
+
+- Desktop
+<img src="git-assets/desktop.gif">
+
+- Mobile
+<img src="git-assets/mobile.gif">
 
 # Getting Started with Create React App
 
